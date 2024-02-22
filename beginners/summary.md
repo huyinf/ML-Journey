@@ -7,7 +7,8 @@
 - Input: Multiple Variables
 ### Normal Equation
 - a closed-form solution that directly calculates the optimal $\theta$ values without the need for an iterative optimization algorithim like gradient descent.
-$$
+
+- $$
 \theta = (X^T X)^{-1} X^T y
 $$
 - where:
