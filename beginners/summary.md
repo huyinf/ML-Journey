@@ -132,3 +132,7 @@ $$
   - Use **confusion matrix** to determine the quality of the models.
 - Inference:
   - Use the prediction of combined results from all models to get a more robust and accurate prediction.
+
+- Visualization
+
+![Confusion Matrix](C:\Users\HuyTP\PycharmProjects\ML\beginners\disease_prediction\imgs\cf_matrix.png)

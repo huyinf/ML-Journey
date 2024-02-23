@@ -91,7 +91,7 @@ for model_name in models:
 
 
 # create a figure with subplots
-fig, axs = plt.subplots(1, 4, figsize=(30, 10))
+fig, axs = plt.subplots(2, 2, figsize=(20, 10))
 
 # Train and Test Support Vector Classifier
 svm_model = SVC()
@@ -103,11 +103,11 @@ svm_preds = svm_model.predict(X_test)
 
 svm_cf_matrix = confusion_matrix(y_test, svm_preds)
 # plt.figure(figsize=(10,6))
-sns.heatmap(svm_cf_matrix, annot=True, ax=axs[0])
+sns.heatmap(svm_cf_matrix, annot=True, ax=axs[0][0])
 # plt.title("Confusion Matrix for SVM Classifier on Test Data")
 # plt.show()
 
-axs[0].set_title("Confusion Matrix \nfor SVM Classifier on Test Data")
+axs[0][0].set_title("Confusion Matrix \nfor SVM Classifier on Test Data")
 
 # Guassian Navie Bayes Classifier
 
@@ -120,11 +120,11 @@ nb_preds = nb_model.predict(X_test)
 
 nb_cf_matrix = confusion_matrix(y_test, nb_preds)
 # plt.figure(figsize=(10,6))
-sns.heatmap(nb_cf_matrix, annot=True, ax=axs[1])
+sns.heatmap(nb_cf_matrix, annot=True, ax=axs[0][1])
 # plt.title("Confusion Matrix for Gaussian Navie Bayes Classifier on Test Data")
 # plt.show()
 
-axs[1].set_title("Confusion Matrix \nfor Gaussian Navie Bayes Classifier on Test Data")
+axs[0][1].set_title("Confusion Matrix \nfor Gaussian Navie Bayes Classifier on Test Data")
 
 # Random Forest Classifier
 rf_model = RandomForestClassifier(random_state=18)
@@ -136,11 +136,11 @@ rf_preds = rf_model.predict(X_test)
 
 rf_cf_matrix = confusion_matrix(y_test, rf_preds)
 # plt.figure(figsize=(10,6))
-sns.heatmap(rf_cf_matrix, annot=True, ax=axs[2])
+sns.heatmap(rf_cf_matrix, annot=True, ax=axs[1][0])
 # plt.title("Confusion Matrix for Random Forest Classifier on Test Data")
 # plt.show()
 
-axs[2].set_title("Confusion Matrix \nfor Random Forest Classifier on Test Data")
+axs[1][0].set_title("Confusion Matrix \nfor Random Forest Classifier on Test Data")
 
 # Fitting the model on whole data and validating on the Test dataset
 
@@ -177,12 +177,12 @@ final_preds = [mode([i, j, k])[0] for i, j, k in zip(final_svm_preds, final_nb_p
 # print(f"Accuracy on Test dataset by the combined model: {accuracy_score(test_y, final_preds) * 100}")
 
 cf_matrix = confusion_matrix(test_y, final_preds)
-sns.heatmap(cf_matrix, annot=True, ax=axs[3])
-axs[3].set_title("Confusion Matrix \nfor Combined Model on Test Dataset")
+sns.heatmap(cf_matrix, annot=True, ax=axs[1][1])
+axs[1][1].set_title("Confusion Matrix \nfor Combined Model on Test Dataset")
 
-# # adjust layout to prevent overlapping
-# plt.tight_layout()
-# plt.show()
+# adjust layout to prevent overlapping
+plt.tight_layout()
+plt.show()
 
 
 # create function that can take symptoms as input and generate for disease
