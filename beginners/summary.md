@@ -48,7 +48,7 @@ $$
 $$
 J = \frac{1}{2}\sum_{i=1}^m\left(h_{\theta}(x^{(i)})-y^{(i)}\right)^2
 $$
-- We have $X,\;\theta,\;y$:
+- We have $X, \theta, y$:
 
 $$
 X = \begin{bmatrix}
@@ -100,8 +100,11 @@ $$
 \sum_{i=1}^m\left(h_{\theta}(x^{(i)})-y^{(i)}\right)^2 = (X\theta-y)^T (X\theta-y)\\
 \Rightarrow J = \frac{1}{2}(X\theta-y)^T (X\theta-y)
 $$
+
 - To minimize cost function $J$, take the gradient:
-$\begin{aligned}
+
+$
+\begin{aligned}
 \nabla_{\theta}J(\theta) &= \nabla_{\theta}\frac{1}{2}(X\theta-y)^T(X\theta-y)\\
 &= \frac{1}{2}\nabla_{\theta}(\theta^TX^T-y^T)(X\theta-y)\\
 &= \frac{1}{2}\nabla_{\theta}[\theta^TX^TX\theta-\theta^TX^Ty-y^TX\theta+y^Ty]\\
