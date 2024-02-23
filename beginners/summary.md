@@ -36,7 +36,11 @@ $$
 - The gradient of $f(A)$ respect to matrix $A$ is formulated by:    
 
 $$
-\nabla_A f(A) = \begin{bmatrix}\displaystyle\frac{\partial f}{\partial A_{11}}\;\displaystyle\frac{\partial f}{\partial A_{12}}\\\displaystyle\frac{\partial f}{\partial A_{11}}\;\displaystyle\frac{\partial f}{\partial A_{12}}\\\end{bmatrix}
+\nabla_A f(A) = 
+\begin{bmatrix}
+\displaystyle\frac{\partial f}{\partial A_{11}} & \displaystyle\frac{\partial f}{\partial A_{12}}\\
+\displaystyle\frac{\partial f}{\partial A_{11}} & \displaystyle\frac{\partial f}{\partial A_{12}}\\
+\end{bmatrix}
 $$
 
 - **Cost function**
