@@ -24,8 +24,7 @@ $$
 - This process is efficient for small datasets and offers a direct, one-step solution to finding the optimal coefficients. However, it can be computationally expensive and may not work for datasets with a large number of features or when the matrix $X^T X$ is singular.
 
 **Mathematics Explanation**
-- **Gradient**
-  - Given a function $f: \mathbb{R}^{2\times 2} \mapsto \mathbb{R}$ and a matrix
+- Given a function $f: \mathbb{R}^{2\times 2} \mapsto \mathbb{R}$ and a matrix
     
 $$
 A = \begin{bmatrix}
