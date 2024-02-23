@@ -25,27 +25,18 @@ $$
 
 - **Mathematics Explanation**
 - **Gradient**
-    - Given matrix
-
+    - Given a function $f: \mathbb{R}^{2\times 2} \mapsto \mathbb{R}$ and a matrix 
 $$
 A = \begin{bmatrix}
-A_{11} & A_{12}\\ A_{21} & A_{22}
+A_{11} & A_{12}\\
+A_{21} & A_{22}\\
 \end{bmatrix}
 $$
-
+    - The gradient of $f(A)$ respect to matrix $A$ is formulated by:    
 $$
-J = a + \pi
+\nabla_A f(A) = \begin{bmatrix}\displaystyle\frac{\partial f}{\partial A_{11}}\;\displaystyle\frac{\partial f}{\partial A_{12}}\\\displaystyle\frac{\partial f}{\partial A_{11}}\;\displaystyle\frac{\partial f}{\partial A_{12}}\\\end{bmatrix}
 $$
-
-    - and a function $f: \mathbb{R}^{2\times 2} \mapsto \mathbb{R}$.
-    - The gradient of $f(A)$ respect to matrix $A$ is formulated by:
-    $$
-    \nabla_A f(A) = \begin{bmatrix}\displaystyle\frac{\partial f}{\partial A_{11}}\;\displaystyle\frac{\partial f}{\partial A_{12}}\\\displaystyle\frac{\partial f}{\partial A_{11}}\;\displaystyle\frac{\partial f}{\partial A_{12}}\\\end{bmatrix}
-    $$
-
-
 - **Cost function**
-  
 $$
 J = \frac{1}{2}\sum_{i=1}^m\left(h_{\theta}(x^{(i)})-y^{(i)}\right)^2
 $$
