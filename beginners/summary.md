@@ -120,4 +120,15 @@ $$
 \end{aligned}
 $$
 
+## 2. Disease Prediction
 
+**Keywords: Cross-Validation, Confustion Matrix, SVM, Navie Bayes, Random Forest, Classifier**
+
+- Cleaning data:
+  - Drop empty column
+  - Encode the target column i.e. "prognosis" from string type to numerical type by using a **label encoder**.
+- Model building:
+  - Use Support Vector Classifier, Naive Bayes Classifier, and Random Forest Classifier.
+  - Use **confusion matrix** to determine the quality of the models.
+- Inference:
+  - Use the prediction of combined results from all models to get a more robust and accurate prediction.
