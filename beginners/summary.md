@@ -103,7 +103,7 @@ $$
 
 - To minimize cost function $J$, take the gradient:
 
-$
+$$
 \begin{aligned}
 \nabla_{\theta}J(\theta) &= \nabla_{\theta}\frac{1}{2}(X\theta-y)^T(X\theta-y)\\
 &= \frac{1}{2}\nabla_{\theta}(\theta^TX^T-y^T)(X\theta-y)\\
@@ -112,7 +112,7 @@ $
 &= X^TX\theta-X^Ty\\
 &=\vec{0}\quad(\text{optmial value})\\
 \end{aligned}
-$
+$$
 
 $\begin{aligned}
 &\Rightarrow X^TX\theta=X^Ty \quad(\text{Normal Equation})\\
