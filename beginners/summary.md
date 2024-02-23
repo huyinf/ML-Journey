@@ -49,6 +49,7 @@ $$
 J = \frac{1}{2}\sum_{i=1}^m\left(h_{\theta}(x^{(i)})-y^{(i)}\right)^2
 $$
 - We have $X,\,\theta,\,y$:
+
 $$
 X = \begin{bmatrix}
 x^{(1)^T}\\
