@@ -54,15 +54,43 @@ X = \begin{bmatrix}
 x^{(1)^T}\\
 \vdots\\
 x^{(m)^T}
-\end{bmatrix},\quad \theta = \begin{bmatrix}\theta_0\\\theta_1\\\vdots\\\theta_n\end{bmatrix},\quad y = \begin{bmatrix}y^{(1)}\\\vdots\\ y^{(m)}\\\end{bmatrix}
+\end{bmatrix},\quad \theta =
+\begin{bmatrix}
+\theta_0\\
+\theta_1\\
+\vdots\\
+\theta_n
+\end{bmatrix},\quad y = 
+\begin{bmatrix}
+y^{(1)}\\
+\vdots\\
+y^{(m)}\\
+\end{bmatrix}
 \\
 X\theta = \begin{bmatrix}
 x^{(1)^T}\\
 \vdots\\
 x^{(m)^T}
-\end{bmatrix} \begin{bmatrix}\theta_0\\\theta_1\\\vdots\\\theta_n\end{bmatrix}
-= \begin{bmatrix}X^{(1)^T}\theta\\\vdots\\ X^{(m)^T}\theta\end{bmatrix} = \begin{bmatrix}h_{\theta}(x^{(1)})\\\vdots\\ h_{\theta}(x^{(m)})\\\end{bmatrix}\\
-X\theta-y = \begin{bmatrix}h_{\theta}^{(1)}-y^{(1)}\\\vdots\\ h_{\theta}^{(m)}-y^{(m)}\end{bmatrix}
+\end{bmatrix} \begin{bmatrix}
+\theta_0\\
+\theta_1\\
+\vdots\\
+\theta_n
+\end{bmatrix}
+= \begin{bmatrix}
+X^{(1)^T}\theta\\
+\vdots\\
+X^{(m)^T}\theta
+\end{bmatrix} = \begin{bmatrix}
+h_{\theta}(x^{(1)})\\
+\vdots\\
+h_{\theta}(x^{(m)})\\
+\end{bmatrix}\\
+X\theta-y = \begin{bmatrix}
+h_{\theta}^{(1)}-y^{(1)}\\
+\vdots\\
+h_{\theta}^{(m)}-y^{(m)}
+\end{bmatrix}
 $$
 
 $$
