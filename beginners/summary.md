@@ -25,14 +25,12 @@ $$
 
 **Mathematics Explanation**
 - **Gradient**
-    - Given a function $f: \mathbb{R}^{2\times 2} \mapsto \mathbb{R}$ and a matrix
-  
-  $$
+    - Given a function $f: \mathbb{R}^{2\times 2} \mapsto \mathbb{R}$ and a matrix $
   A = \begin{bmatrix}
   A_{11} & A_{12}\\
   A_{21} & A_{22}\\
   \end{bmatrix}
-  $$
+  $
 
     - The gradient of $f(A)$ respect to matrix $A$ is formulated by:    
 
