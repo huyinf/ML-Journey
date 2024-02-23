@@ -66,7 +66,8 @@ y^{(1)}\\
 \vdots\\
 y^{(m)}\\
 \end{bmatrix}
-\\
+
+
 X\theta = \begin{bmatrix}
 x^{(1)^T}\\
 \vdots\\
