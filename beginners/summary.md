@@ -6,7 +6,7 @@
 
 - Input: Multiple Variables
 ### Normal Equation
-- a closed-form solution that directly calculates the optimal $\theta$ values without the need for an iterative optimization algorithim like gradient descent.
+- a closed-form solution that directly calculates the optimal $\theta$ values without requiring an iterative optimization algorithm like gradient descent.
 
 $$
 \theta = (X^T X)^{-1} X^T y
@@ -18,15 +18,17 @@ $$
   - $\theta$ is the vector of coefficients.
 - Order of operations:
   1. **Transpose** $X$ to align the dimensions for matrix multiplication.
-  2. **Matrix Multiplication** $X^T X$ results in a square matrix that is used to calculate its inverse.
-  3. **Matrix Multiplication** $$X^T y$ results in a vector that is used for the final multiplication.
+  2. **Matrix Multiplication** $X^T X$ results in a square matrix used to calculate its inverse.
+  3. **Matrix Multiplication** $$X^T y$ results in a vector used for the final multiplication.
   4. **Final Multiplication** between $X^T X$ and $X^T y$ to obtain the coefficients $\theta$ that minimize the loss fuction.
 - This process is efficient for small datasets and offers a direct, one-step solution to finding the optimal coefficients. However, it can be computationally expensive and may not work for datasets with a large number of features or when the matrix $X^T X$ is singular.
 
 - **Mathematics Explanation**
 - **Gradient**
     - Given matrix
-      $$A = \begin{bmatrix}&A_{11} &A_{12}\\&A_{21} &A_{22}\end{bmatrix}$$
+      $$
+      A = \begin{bmatrix}A_{11} A_{12}\\A_{21} A_{22}\end{bmatrix}
+      $$
       and a function $f: \mathbb{R}^{2\times 2} \mapsto \mathbb{R}$.
     - The gradient of $f(A)$ respect to matrix $A$ is formulated by:
     $$
