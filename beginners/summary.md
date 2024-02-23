@@ -135,4 +135,4 @@ $$
 
 - Visualization
 
-![Confusion Matrix](C:\Users\HuyTP\PycharmProjects\ML\beginners\disease_prediction\imgs\cf_matrix.png)
+![Confusion Matrix](./disease_prediction/imgs/cf_matrix.png)
