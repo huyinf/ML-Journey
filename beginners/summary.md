@@ -35,6 +35,7 @@ $$
 
 
 - **Cost function**
+  
 $$
 J = \frac{1}{2}\sum_{i=1}^m\left(h_{\theta}(x^{(i)})-y^{(i)}\right)^2
 $$
