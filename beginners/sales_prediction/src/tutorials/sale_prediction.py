@@ -15,7 +15,7 @@ from sklearn.linear_model import LinearRegression
 import plotly.express as px
 import plotly.graph_objects as go
 
-data = pd.read_csv("C:/Users/HuyTP/PycharmProjects/ML/beginners/linear_regression/data/advertising.csv")
+data = pd.read_csv("/beginners/sales_prediction/data/advertising.csv")
 # print(data.info())
 # # print(data.info())
 # #

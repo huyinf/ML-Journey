@@ -45,6 +45,12 @@ class _LinearRegression():
 
 		return cost
 
+	def compute_cost_vectorized(self, X, y):
+		m = X.shape[0]
+		predictions = np.dot(X, self.w) + self.b
+		cost = (1 / (2 * m)) * np.sum(np.square(predictions - y))
+		return cost
+
 	def compute_gradient(self, x, y):
 
 		m = x.shape[0]
@@ -71,7 +77,7 @@ class _LinearRegression():
 			self.b -= self.lr * dj_db
 
 			if i < 10000:
-				cost = self.compute_cost(x, y)
+				cost = self.compute_cost_vectorized(x, y)
 				self.J_hist.append(cost)
 			# print(cost)
 
@@ -84,7 +90,7 @@ class _LinearRegression():
 		return np.dot(x, self.w) + self.b
 
 
-data = pd.read_csv("C:/Users/HuyTP/PycharmProjects/ML/beginners/linear_regression/data/advertising.csv")
+data = pd.read_csv("C:/Users/HuyTP/PycharmProjects/ML/beginners/sales_prediction/data/advertising.csv")
 # print(data.info())
 
 # data preparation
@@ -99,7 +105,7 @@ features = np.array([[230.4, 37.9, 69.2]])
 # initialize parameters
 w = np.zeros(x.shape[1])
 b = 0.
-alpha = 0.01
+alpha = 0.001
 iterations = 1000
 
 model = _LinearRegression(w, b, alpha, iterations)

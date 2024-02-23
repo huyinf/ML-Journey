@@ -2,9 +2,8 @@
 
 ## 1. Sales Prediction
 
-**Keyword: Linear Regression**
+**Keyword: Multiple Linear Regression**
 
-- Input: Multiple Variables
 ### Normal Equation
 - a closed-form solution that directly calculates the optimal $\theta$ values without requiring an iterative optimization algorithm like gradient descent.
 
@@ -120,3 +119,5 @@ $$
 &\Rightarrow \theta = (X^TX)^{-1}X^Ty.
 \end{aligned}
 $$
+
+

@@ -9,7 +9,7 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 import numpy as np
 import pandas as pd
 
-data = pd.read_csv("C:/Users/HuyTP/PycharmProjects/ML/beginners/linear_regression/data/advertising.csv")
+data = pd.read_csv("/beginners/sales_prediction/data/advertising.csv")
 
 X = data[["TV", "Newspaper", "Radio"]].values
 y = data["Sales"].values
