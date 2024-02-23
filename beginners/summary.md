@@ -26,11 +26,11 @@ $$
 - **Mathematics Explanation**
 - **Gradient**
     - Given matrix
-      $$
+      $
       A = \begin{bmatrix}
       A_{11} & A_{12}\\ A_{21} & A_{22}
       \end{bmatrix}
-      $$
+      $
       and a function $f: \mathbb{R}^{2\times 2} \mapsto \mathbb{R}$.
     - The gradient of $f(A)$ respect to matrix $A$ is formulated by:
     $$
