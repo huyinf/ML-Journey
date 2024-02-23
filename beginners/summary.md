@@ -114,7 +114,9 @@ $$
 \end{aligned}
 $$
 
-$\begin{aligned}
+$$
+\begin{aligned}
 &\Rightarrow X^TX\theta=X^Ty \quad(\text{Normal Equation})\\
 &\Rightarrow \theta = (X^TX)^{-1}X^Ty.
-\end{aligned}$
+\end{aligned}
+$$
