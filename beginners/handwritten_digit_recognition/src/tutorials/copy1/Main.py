@@ -14,7 +14,7 @@ current_script_dir = os.path.dirname(os.path.realpath(__file__))
 
 # Construct the path to the data file
 # Go up two levels to reach the root directory, then navigate to the data directory
-data_file_path = os.path.join(current_script_dir, '..', '..', 'data', data_file)
+data_file_path = os.path.join(current_script_dir, '../..', '..', 'data', data_file)
 # print(data_file_path)
 data = loadmat(data_file_path)
 # print(data)
