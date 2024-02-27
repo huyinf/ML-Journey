@@ -135,7 +135,7 @@ $$
 
 - Visualization
 
-![Confusion Matrix](./disease_prediction/imgs/cf_matrix.png)
+![Confusion Matrix](disease_predictionmgs/cf_matrix.png)
 
 ## 3. Handwritten Digit Recognition
 

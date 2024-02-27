@@ -90,7 +90,7 @@ class _LinearRegression():
 		return np.dot(x, self.w) + self.b
 
 
-data = pd.read_csv("C:/Users/HuyTP/PycharmProjects/ML/beginners/sales_prediction/data/advertising.csv")
+data = pd.read_csv("/sales_prediction/data/advertising.csv")
 # print(data.info())
 
 # data preparation

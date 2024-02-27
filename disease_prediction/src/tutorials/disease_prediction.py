@@ -20,8 +20,8 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix
 
 # load data
-train_data = pd.read_csv("C:/Users/HuyTP/PycharmProjects/ML/beginners/disease_prediction/data/Training.csv")
-test_data = pd.read_csv("C:/Users/HuyTP/PycharmProjects/ML/beginners/disease_prediction/data/Testing.csv")
+train_data = pd.read_csv("/disease_prediction/data/Training.csv")
+test_data = pd.read_csv("/disease_prediction/data/Testing.csv")
 
 # data cleaning
 
