@@ -10,8 +10,9 @@ import os
 import tensorflow as tf
 
 curr_dir = os.getcwd()
+print(curr_dir)
 file_name = "MNIST_MODEL.h5"
-file_path = os.path.join(curr_dir, '..', file_name)
+file_path = os.path.join(curr_dir, file_name)
 
 model = tf.keras.models.load_model(file_path)
 
